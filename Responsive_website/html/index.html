@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Bootstrap website Layout</title>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4d01ac1cbe.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+    
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-md navbar-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../images/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" >
+                <span class="navbar-toggler-icon" ></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive" >
+                <ul  class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">connect</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Image Slider-->
+    <div id="slides" class="carousel slide" data-ride="carousel" >
+        <!--Indicators  -->
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+        </ul>
+
+        <!--Wrapper for slides-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../images/background.png">
+                <div class="carousel-caption">
+                    <h1 class="display-2">Bootstrap</h1>
+                    <h3>Complete Website Layout</h3>
+
+                    <button type="button" class="btn btn-outline-light btn-lg">VIEW DEMO</button>
+                    <button type="button" class="btn btn-primary btn-lg">Get Started</button>
+                </div>
+            </div> 
+            <div class="carousel-item">
+                <img src="../images/background2.png">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/background3.png">
+            </div>
+        </div>
+    </div>
+    <!--Jumbotron-->
+    <div class="container-fluid">
+        <div class="row jumbotron">
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+                <p class="lead">A web hosting service allows individuals and organisations to make their website accessible
+                    via the World Wide Wibe.</p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+                <a href="#"><button type="button" class="btn btn-outline-secondary btn-lg"> Web Hosting</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!--Welcome Section-->
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">Build with ease.</h1>
+            </div>
+            <hr>
+
+            <div class="col-12">
+                <p class="lead"> Welcome to my Bootstrap 4 website. Bootstrap is a free and open-source front end library
+                    with HTML and CSS based designs.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Three column section-->
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fas fa-code"></i>
+                <h3>HTML5</h3>
+                <p>Built with the latest version of HTML, HTML5</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fas fa-bold"></i>
+                <h3>BOOTSTRAP</h3>
+                <p>Built with the latest version of Bootstrap, Bootstrap4</p>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <i class="fab fa-css3"></i>
+                <h3>CSS3</h3>
+                <p>Built with the latest version of CSS, CSS3</p>
+            </div>
+        </div>
+        <hr class="my-4">
+    </div>
+
+    <!--Two column section-->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-lg-6">
+                <h2>If you build it...</h2>
+                <p>The columns will automatically stack on top of each other when
+                    the screen is less than 576px wide.
+                </p>
+                <p>Resize the browser window to see the effect. Responsive web design has become more important as 
+                    the amount of mobile traffice now accounts for more than half of total traffic.</p>
+                <p>It can also display the web page differnetly depending 
+                    on the screen size or viewing device.</p>
+                
+                <br>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+            <div class="col-lg-6">
+                <img src="../images/desk.png" alt="Desk image" class="img-fuild">
+            </div>
+        </div>
+    </div>
+    <hr class="my-4">
+
+    <!--Fixed Image Background-->
+    <figure>
+        <div class="fixed-wrap">
+            <div id="fixed"></div>
+        </div>
+    </figure>
+
+    <!--Imoji section-->
+    <button class="fun" data-toggle="collapse" data-target="#emoji">Click for fun</button>
+
+    <div id="emoji" class="collapse">
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col-sm-6 col-md-3">
+                <img src="../images/gif/panda.gif" alt="panda">
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <img src="../images/gif/poo.gif" alt="foo">
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <img src="../images/gif/unicorn.gif" alt="unicorn">
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <img src="../images/gif/chicken.gif" alt="chicken">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--Meet the team-->
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">Meet the Team</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--Cards Section-->
+    <div class="container-fulid padding">
+        <div class="row pading">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="../images/62753996.jpg" alt="team1">
+                    <div class="card-body">
+                        <h4 class="card-title">Vipin Khichi</h4>
+                        <p class="card-text">Vipin Khichi is a student @ NIT Kurukshetra, persuing B.TECH in Computer Science Engg.</p>
+
+                        <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="../images/team2.png" alt="team2">
+                    <div class="card-body">
+                        <h4 class="card-title">Mary Jo</h4>
+                        <p class="card-text">Mary is a designer with almost 10 year of digital design experience</p>
+
+                        <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="../images/team1.png" alt="team3">
+                    <div class="card-body">
+                        <h4 class="card-title">Jhon Doe</h4>
+                        <p class="card-text">Joe is an internet entrepreneur with almost 20 year of experience</p>
+
+                        <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Two column section-->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-lg-6">
+                <h2>Our Philosphy</h2>
+                <p>we know that greatness in distruptive are required bold ambition, curious
+                    talent and a culture that believes we're smarter together
+                </p>
+                <p>We approach every challenge holistically, with best-in-class-
+                    class expertise in data, creativity, media, technology, search, social and
+                    more. We call this Alchemy. It has the poer to build our clients
+                    magic, we've got it down to a science
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <img src="../images/bootstrap2.png" alt="Desk image" class="img-fuild">
+            </div>
+        </div>
+        <hr class="my-4">
+    </div>
+
+    <!--Connect-->
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-12">
+                <h2>Connect</h2>
+            </div>
+            <div class="col-12 social padding">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="../images/w3newbie.png" alt="logo">
+                    <hr class="light">
+                    <p>555-555-5555</p>
+                    <p>email@gmail.com</p>
+                    <p>100 Street name</p>
+                    <p>City, State, 00000</p>
+                </div>
+
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Our Hours</h5>
+                    <hr class="light">
+                    <p>Monday: 9am - 5pm</p>
+                    <p>saturday: 10am - 4pm</p>
+                    <p>sunday: Closed</p>
+                </div>
+
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Sevice Area</h5>
+                    <hr class="light">
+                    <p>City, State, 00000</p>
+                    <p>City, State, 00000</p>
+                    <p>City, State, 00000</p>
+                    <p>City, State, 00000</p>
+                </div>
+                
+            <div class="col-12">
+                <hr class="light-100">
+                <h5>&copy; @vipinkhichi</h5>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
